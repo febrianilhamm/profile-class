@@ -1,0 +1,575 @@
+<html>
+<head>
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+.portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.portfolio .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow:hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border:1rem solid transparent;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box .content{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+}
+
+.portfolio .box-container .box:hover .content{
+    transform: scale(1);
+}
+
+.portfolio .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
+
+.portfolio .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+ <h1 class="heading"> <span>Image Gallery Class 10</span></h1>
+<audio src="masasma.mp3" controls="" autoplay="loop"> </audio>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="1.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 1</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="2.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 2</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="3.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 3</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="4.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 4</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="5.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 5</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="6.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 6</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="7.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 7</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="8.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 8</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="9.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 9</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="10.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 10</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="11.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 11</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="12.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 12</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="13.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 13</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="14.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 14</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="15.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 15</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="16.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 16</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="17.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 17</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="18.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 18</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="19.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 19</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="20.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 20</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="21.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 21</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="22.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 22</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="23.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 23</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="24.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 24</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="25.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 25</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="26.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 26</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="27.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 27</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="28.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 28</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="29.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 29</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="30.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 30</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="31.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 31</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="32.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 32</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="33.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 33</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="34.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 34</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="35.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 35</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="36.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 36</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="37.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 37</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="38.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 38</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="39.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 39</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="40.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 40</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="41.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 41</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="42.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 42</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="43.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 43</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="44.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 44</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="45.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 45</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="46.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 46</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="47.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 47</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="48.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 48</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="49.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 49</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="50.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 50</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="51.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 51</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="52.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 52</div>
+  </div>
+</div>
+<div class="clearfix"></div>
+</body>
+</html>

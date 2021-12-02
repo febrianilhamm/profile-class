@@ -1,0 +1,198 @@
+<html>
+<head>
+<style>
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+.portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
+
+.portfolio .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow:hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border:1rem solid transparent;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box .content{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+}
+
+.portfolio .box-container .box:hover .content{
+    transform: scale(1);
+}
+
+.portfolio .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
+
+.portfolio .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+<h1 class="heading"> <span>Image Gallery Class 12</span></h1>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w1.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 1</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w2.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">foto 2</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w3.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 3</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w4.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 4</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w5.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 5</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w6.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 6</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w15.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 7</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w16.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 8</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w17.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 9</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank">
+      <img src="w18.jpg"  width="600" height="400">
+    </a>
+    <div class="desc">Foto 10</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+</body>
+</html>
